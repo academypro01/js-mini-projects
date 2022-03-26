@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.square {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+polygon {
+    fill: transparent;
+    stroke: black;
+    stroke-linejoin: round;
+}
+
+polygon:hover {
+    cursor: pointer;
+}
+
+#colorPicker {
+    display: none;
+}
+
+#myDialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+.closeDialog {
+    color: #fff;
+    background-color: crimson;
+    padding-inline-end: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: none;
+}
+.closeDialog:hover {
+    cursor: pointer;
+}
+.closeDialog p {
+    text-align: center;
+    width: 100%;
+    margin-left: 50%;
+}
+
+#colorInput {
+    border: lightgray solid 1px;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submitColor {
+    display: block;
+    width: 100px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4caf50;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.submitColor:hover {
+    cursor: pointer;
+}

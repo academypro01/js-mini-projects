@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="color" id="colorPicker">
+        <input type="button" value="Reset Color" onclick="resetColor()">
+        <div class="square">
+            <svg viewBox="0 0 100 100">
+                <polygon onclick="changeColor(this)" points="5,5 50,50 95,5" />
+                <polygon onclick="changeColor(this)" points="5,5 50,50 5,95" />
+                <polygon onclick="changeColor(this)" points="5,95 50,50 95,95" />
+                <polygon onclick="changeColor(this)" points="95,5 50,50 95,95" />
+            </svg>
+        </div>
+        <dialog id="myDialog">
+            <button onclick="closeMyDialog()" class="closeDialog"><p>X</p></button>
+            <input type="text" id="colorInput" placeholder="Enter Color Code">
+            <button type="button" onclick="addColor()" class="submitColor">Submit Color</button>
+        </dialog>
+    </div>
+
+
+    <!-- Javascript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.8/jscolor.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
